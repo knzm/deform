@@ -789,7 +789,7 @@ CSS ファイルと画像の中で、いくつかの重要なファイルは以�
 .. particular form rendering, so that you can inject only the ones
 .. necessary into the page rendering.
 
-:meth:`deform.field.get_widget_resources` メソッドは、 ``static``
+:meth:`deform.Field.get_widget_resources` メソッドは、 ``static``
 ディレクトリからの相対パスでどのファイルが特定のフォームレンダリングに
 よって必要とされるかを知るために使用することができます。
 その結果、ページのレンダリングに必要なものだけを含めることができます。
