@@ -344,7 +344,7 @@ Deform 0.8 から、スキーマの一部としてウィジェットを指定す
 例えば:
 
 
-.. code-block: python
+.. code-block:: python
 
    form['ssn'].widget = TextInputWidget(mask='999-99-9999')
 
@@ -404,13 +404,13 @@ Deform 0.8 から、スキーマの一部としてウィジェットを指定す
 ..     999-99-9999
 
 日付
-    99/99/9999
+    ``99/99/9999``
 
 アメリカの電話番号
-    (999) 999-9999
+    ``(999) 999-9999``
 
 アメリカの社会保障番号 (SSN)
-    999-99-9999
+    ``999-99-9999``
 
 
 .. When this option is used, the :term:`jquery.maskedinput` library must
