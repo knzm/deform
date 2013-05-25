@@ -1,17 +1,34 @@
-Example App
-===========
+.. Example App
 
-An example is worth a thousand words.  Here's an example `Pyramid
-<http://pylonsproject.org>`_ application demonstrating how one might use
-:mod:`deform` to render a form.
+サンプルアプリ
+==============
+
+.. An example is worth a thousand words.  Here's an example `Pyramid
+.. <http://pylonsproject.org>`_ application demonstrating how one might use
+.. :mod:`deform` to render a form.
+
+例は千の言葉に匹敵します (百聞は一見にしかず)。
+フォームをレンダリングするためにどのように :mod:`deform` を使用するかの
+デモンストレーションを行う `Pyramid <http://pylonsproject.org>`_
+アプリケーションの例があります。
+
 
 .. warning::
 
-   :mod:`deform` is not dependent on :mod:`pyramid` at all; we use Pyramid in
-   the examples below only to facilitate demonstration of an actual
-   end-to-end working application that uses Deform.
+   .. :mod:`deform` is not dependent on :mod:`pyramid` at all; we use Pyramid in
+   .. the examples below only to facilitate demonstration of an actual
+   .. end-to-end working application that uses Deform.
 
-Here's the Python code:
+   :mod:`deform` は :mod:`pyramid` にはまったく依存していません;
+   下記の例の中では、単に Deform を使用した完全に動作する実際の
+   アプリケーションをデモンストレーションするという目的のためだけに
+   Pyramid を使用しています。
+
+
+.. Here's the Python code:
+
+これが Python コードです:
+
 
 .. code-block:: python
    :linenos:
@@ -86,8 +103,13 @@ Here's the Python code:
        app = config.make_wsgi_app()
        serve(app)
 
-Here's the Chameleon ZPT template named ``form.pt``, placed in the
-same directory:
+
+.. Here's the Chameleon ZPT template named ``form.pt``, placed in the
+.. same directory:
+
+これが Chameleon ZPT テンプレートです。 ``form.pt`` という名前で
+同じディレクトリに置かれます:
+
 
 .. code-block:: xml
    :linenos:
