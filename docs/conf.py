@@ -29,11 +29,11 @@ if 'sphinx-build' in ' '.join(sys.argv): # protect against dumb importers
     _themes = os.path.join(cwd, '_themes')
 
     if not os.path.isdir(_themes):
-        call([git, 'clone', 'git://github.com/Pylons/pylons_sphinx_theme.git',
+        call([git, 'clone', 'git://github.com/pylonsproject-jp/pylons_sphinx_theme.git',
                 '_themes'])
     else:
         os.chdir(_themes)
-        call([git, 'checkout', 'master'])
+        call([git, 'checkout', 'doc-ja'])
         call([git, 'pull'])
         os.chdir(cwd)
 
@@ -123,8 +123,12 @@ pygments_style = 'sphinx'
 
 sys.path.append(os.path.abspath('_themes'))
 html_theme_path = ['_themes']
-html_theme = 'pylons'
-html_theme_options = dict(github_url='https://github.com/Pylons/deform')
+html_theme = 'pylons-ja'
+html_theme_options = dict(
+    # github_url='https://github.com/Pylons/deform',
+    original_url='http://docs.pylonsproject.org/projects/deform/en/latest/',
+    our_github_url='https://github.com/pylonsproject-jp/deform',
+    )
 
 # The style sheet to use for HTML and HTML Help pages. A file of that name
 # must exist either in Sphinx' static/ path, or in one of the custom paths
