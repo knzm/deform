@@ -58,7 +58,7 @@ Deform の AJAX 機能を使用する例は、デモサイト
 ..   <http://deformdemo.repoze.org/ajaxform/>`_
 
 - `バリデーション成功時にリダイレクトする
-  <http://deformdemo.repoze.org/ajaxform/>`_
+  <http://deformdemo.repoze.org/ajaxform_redirect/>`_
 
 - `バリデーション成功時にリダイレクトしない
   <http://deformdemo.repoze.org/ajaxform/>`_
