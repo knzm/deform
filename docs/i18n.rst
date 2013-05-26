@@ -57,5 +57,5 @@ deform がエラーメッセージとステータスメッセージをどのよ�
 `国際化デモ <http://deformdemo.repoze.org/i18n/>`_ を参照してください。
 このデモンストレーションは、 Deform のエラーメッセージを Chameleon
 フォームレンダリングに含めるために `Pyramid の国際化とローカライズ機能
-<http://docs.pylonsproject.org/projects/pyramid/1.0/narr/i18n.html>`_
+<http://docs.pylonsproject.jp/projects/pyramid-doc-ja/en/1.4-branch-doc-ja/narr/i18n.html>`_
 を使用します。
