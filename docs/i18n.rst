@@ -1,12 +1,25 @@
-Internationalization
+.. Internationalization
+
+国際化
 ====================
 
-Deform is fully internationalizable and localizable.  :term:`gettext`
-``.mo.`` files exist in the :mod:`deform` and :mod:`colander` packages
-which contain (currently incomplete) translations to various languages
-for the purpose of rendering localized error messages.
+.. Deform is fully internationalizable and localizable.  :term:`gettext`
+.. ``.mo.`` files exist in the :mod:`deform` and :mod:`colander` packages
+.. which contain (currently incomplete) translations to various languages
+.. for the purpose of rendering localized error messages.
 
-Following should get you started with `i18n` in :mod:`pyramid`::
+Deform は完全な国際化およびローカライズが可能です。 deform と colander の
+パッケージには、ローカライズされたエラーメッセージをレンダリングするために
+様々な言語への翻訳 (現在は不完全) を含む :term:`gettext` ``.mo.`` ファイル
+が存在します。
+
+
+.. Following should get you started with `i18n` in :mod:`pyramid`:
+
+下記を見れば :mod:`pyramid` で `i18n` を始めることができるでしょう:
+
+
+::
 
     import deform
 
@@ -32,12 +45,17 @@ Following should get you started with `i18n` in :mod:`pyramid`::
         deform.Form.set_default_renderer(zpt_renderer)
 
 
-See the `Internationalization demo
-<http://deformdemo.repoze.org/i18n/>`_ for an example of how deform
-error and status messages can be localized.  This demonstration uses
-the `internationalization and localization features of Pyramid
+.. See the `Internationalization demo
+.. <http://deformdemo.repoze.org/i18n/>`_ for an example of how deform
+.. error and status messages can be localized.  This demonstration uses
+.. the `internationalization and localization features of Pyramid
+.. <http://docs.pylonsproject.org/projects/pyramid/1.0/narr/i18n.html>`_
+.. to render Deform error messages into :term:`Chameleon` form renderings.
+
+deform がエラーメッセージとステータスメッセージをどのように
+ローカライズすることができるかの例については
+`国際化デモ <http://deformdemo.repoze.org/i18n/>`_ を参照してください。
+このデモンストレーションは、 Deform のエラーメッセージを Chameleon
+フォームレンダリングに含めるために `Pyramid の国際化とローカライズ機能
 <http://docs.pylonsproject.org/projects/pyramid/1.0/narr/i18n.html>`_
-to render Deform error messages into :term:`Chameleon` form renderings.
-
-
-
+を使用します。
