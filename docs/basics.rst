@@ -241,9 +241,9 @@ http://docs.pylonsproject.org/projects/colander/dev/ に存在します。複雑
 .. Each schema node object has a required *type*, an optional *preparer*
 .. for adjusting data after deserialization, an optional
 .. *validator* for deserialized prepared data, an optional *default*, an
-.. optional *missing*, an optional *title*, an optinal *css_class*, an optional
-.. *description*, and a slightly less optional *name*.  It also accepts
-.. *arbitrary* keyword arguments, which are attached directly as attributes to the
+.. optional *missing*, an optional *title*, an optional *description*,
+.. and a slightly less optional *name*.  It also accepts *arbitrary*
+.. keyword arguments, which are attached directly as attributes to the
 .. node instance.
 
 スキーマは、1つまたは複数の *スキーマノード* ・オブジェクトから構成されます。
@@ -253,9 +253,9 @@ http://docs.pylonsproject.org/projects/colander/dev/ に存在します。複雑
 後のデータを調節するための) オプションの *preparer*, (prepare 済みのデータを
 逆シリアライズするための) オプションの *validator*, オプションの
 *default*, オプションの *missing*, オプションの *title*, オプションの
-*css_class*, オプションの *description*,  ほとんど必須の (slightly less
-optional) *name* があります。さらに、それは *任意の* キーワード引数を
-受け付けます。それらは属性としてノードインスタンスに直接設定されます。
+*description*,  ほとんど必須の (slightly less optional) *name* があります。
+さらに、それは *任意の* キーワード引数を受け付けます。それらは属性として
+ノードインスタンスに直接設定されます。
 
 
 .. The *type* of a schema node indicates its data type (such as
@@ -331,14 +331,6 @@ preparer はシリアライズ中には呼ばれません。逆シリアライ�
 スキーマノードの *title* は、スキーマノードに関するメタデータです。
 それは、スキーマノードに関連するフォームフィールド上部の legend に
 表示されます。デフォルトでは、これは *name* の先頭を大文字にした文字列です。
-
-
-.. The *css_class* of a schema node is metadata about a schema node. It shows up
-.. as a CSS class on the fieldset, which is rendered from the schema node.
-
-スキーマノードの *css_class* は、スキーマノードに関するメタデータです。
-それはスキーマノードからレンダリングされる fieldset の CSS クラスとして
-表示されます。
 
 
 .. The *description* of a schema node is metadata about a schema node.

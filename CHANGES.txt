@@ -10,18 +10,12 @@ Features
   and can be customised by using ``options``.
   [davidjb]
 
-- ``deform.field.Field`` now renders a ``css_class`` on its fieldset, which
-  is set on the schema. This works in the same way as setting a schemas the
-  title inside the fieldset.
-
 Bug Fixes
 ~~~~~~~~~
 
 - Trigger a change event when adding/removing sequence items.
 
 - Add optional label to checkbox widget.
-
-- Make setup_requires depend once again on setuptools_git.
 
 - Raise a ValueError exception when the prototype
   for a field in a sequence has no name. See
